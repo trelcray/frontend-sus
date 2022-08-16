@@ -12,6 +12,8 @@ module.exports = {
         sans: 'Roboto, sans-serif',
       },
       colors: {
+        primary: "#00040f",
+        secondary: "#00f6ff",
         green: {
           300: '#00B37E',
           500: '#00875F',

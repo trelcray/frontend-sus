@@ -7,6 +7,9 @@ export function Index(){
                         items-center 
                         min-h-screen"
         >
+                <h1 className="font-bold text-4xl mb-4">
+                    Verificar andamento
+                </h1>
 
             <label className="font-bold mb-3">insira seu código do SUS!</label>
 
