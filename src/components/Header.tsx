@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 
 
 export function Header() {
@@ -7,11 +8,10 @@ export function Header() {
                 <nav className="flex items-center justify-end sm:justify-cente w-full">
                     {[
                         ['Inicio', '/home'],
-                        ['Criar Consulta', '/createConsult'],
-                        ['Triagem', '/triagem'],
-                        ['Atendimento', '/atendimento'],
+                        ['Consultas', '/consults'],
+                        ['Triagem', '/screening']
                     ].map(([title, url]) => (
-                        <a href={url} 
+                        <Link to={url} 
                             className="
                             p-2 
                             text-center 
@@ -20,7 +20,7 @@ export function Header() {
                             hover:text-secondary"
                         >
                             {title}
-                        </a>
+                        </Link>
                     ))}
                 </nav>
 
