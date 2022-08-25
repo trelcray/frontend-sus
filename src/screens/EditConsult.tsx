@@ -1,17 +1,17 @@
 import { Autocomplete, TextField } from "@mui/material";
-import { PlusCircle } from "phosphor-react";
+import { Pencil } from "phosphor-react";
 import { Cbutton } from "../components/Cbutton";
 import { Header } from "../components/Header";
 import { Input } from "../components/Input";
 
 
-export function CreateConsult() {
+export function EditConsult() {
     const options = [
         { label: 'Thalis Zambarda', id: 1 },
         { label: 'Yuri Ramos', id: 2 },
     ];
 
-    const icon = <PlusCircle size={18} className="mr-1" color="#fafafa" />
+    const icon = <Pencil size={18} className="mr-1" color="#fafafa" />
 
     return (
         <div
@@ -31,7 +31,7 @@ export function CreateConsult() {
             >
                 <div className="flex flex-col items-center">
                     <h1 className="font-bold text-4xl mb-4">
-                        Criar Consulta
+                        Editar Consulta
                     </h1>
 
                     <label className="font-bold">
@@ -79,13 +79,10 @@ export function CreateConsult() {
                     <div className="w-full">
                     <Cbutton
                         icon={icon}
-                        title="Cadastrar"
+                        title="Editar"
                     />
                     </div>
                     
-                        
-                    
-
                 </div>
 
             </form>
