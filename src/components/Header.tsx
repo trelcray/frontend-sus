@@ -9,7 +9,8 @@ export function Header() {
                     {[
                         ['Inicio', '/home'],
                         ['Consultas', '/consults'],
-                        ['Triagem', '/screening']
+                        ['Exames', '/exams'],
+                        ['Consultas Especializada', '/specializedConsultations']
                     ].map(([title, url]) => (
                         <Link to={url} 
                             className="
