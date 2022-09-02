@@ -6,8 +6,8 @@ import { Home } from "./screens/Home";
 import { Index } from "./screens/Index";
 import { Login } from "./screens/Login";
 import { Exams } from "./screens/Exams";
-import { SpecializedConsultations } from "./screens/SpecializedConsultations";
 import { CreateExam } from "./screens/CreateExam";
+import { EditExam } from "./screens/EditExam";
 
 export function Router() {
     return(
@@ -20,7 +20,7 @@ export function Router() {
             <Route path="/editConsult" element={<EditConsult />} />
             <Route path="/exams" element={<Exams />} />
             <Route path="/createExam" element={<CreateExam />} />
-            <Route path="/specializedConsultations" element={<SpecializedConsultations />} />
+            <Route path="/editExam" element={<EditExam />} />
         </Routes>
     )
 }
